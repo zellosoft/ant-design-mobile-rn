@@ -7,14 +7,14 @@ import {
   TextInputFocusEventData,
   TextInputProps,
   TextStyle,
-  View,
+  View
 } from 'react-native'
 import Icon from '../icon'
+import { LocaleContext } from '../locale-provider'
 import { WithTheme, WithThemeStyles } from '../style'
 import { getComponentLocale } from '../_util/getLocale'
 import { defaultProps, SearchBarPropsType, SearchBarState } from './PropsType'
 import SearchBarStyles, { SearchBarStyle } from './style/index'
-import { LocaleContext } from '../locale-provider'
 
 export interface SearchBarProps
   extends SearchBarPropsType,
@@ -117,7 +117,7 @@ export default class SearchBar extends React.Component<
       this.props,
       (this as any).context,
       'SearchBar',
-      () => require('./locale/zh_CN'),
+      () => require('./locale/en_US'),
     )
 
     const { value, focus } = this.state

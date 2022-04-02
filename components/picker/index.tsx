@@ -158,7 +158,7 @@ export default class Picker extends React.Component<PickerProps, any> {
       this.props,
       (this as any).context,
       'Picker',
-      () => require('./locale/zh_CN'),
+      () => require('./locale/en_US'),
     )
 
     const { cascader, popupMoreProps }: { cascader: any; popupMoreProps: {} } =

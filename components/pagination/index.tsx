@@ -2,12 +2,12 @@ import React from 'react'
 import { StyleProp, Text, View, ViewStyle } from 'react-native'
 import Button from '../button/index'
 import Flex from '../flex/index'
+import { LocaleContext } from '../locale-provider'
 import { WithTheme, WithThemeStyles } from '../style'
 import { getComponentLocale } from '../_util/getLocale'
-import zh_CN from './locale/zh_CN'
+import en_US from './locale/en_US'
 import { PaginationPropsType, PaginationState } from './PropsType'
 import PaginationStyles, { PaginationStyle } from './style/index'
-import { LocaleContext } from '../locale-provider'
 
 export interface PaginationNativeProps
   extends PaginationPropsType,
@@ -66,7 +66,7 @@ export default class Pagination extends React.Component<
       this.props,
       (this as any).context,
       'Pagination',
-      () => zh_CN,
+      () => en_US,
     )
     const { prevText, nextText } = locale
 

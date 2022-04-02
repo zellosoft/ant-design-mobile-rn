@@ -1,7 +1,7 @@
 {
-  "name": "@ant-design/react-native",
-  "version": "5.0.0",
-  "description": "基于蚂蚁金服移动设计规范的 React Native 组件库",
+  "name": "@zellosoft/antd-react-native",
+  "version": "5.0.1",
+  "description": "Antd RN - Cross-platform UI for React Native.",
   "keywords": [
     "ant",
     "design",
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/ant-design/ant-design-mobile-rn"
+    "url": "https://github.com/zellosoft/antd-react-native"
   },
   "bugs": {
-    "url": "http://github.com/ant-design/ant-design-mobile-rn/issues"
+    "url": "https://github.com/zellosoft/antd-react-native/issues"
   },
   "files": [
     "lib",

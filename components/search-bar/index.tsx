@@ -7,7 +7,7 @@ import {
   TextInputFocusEventData,
   TextInputProps,
   TextStyle,
-  View
+  View,
 } from 'react-native'
 import Icon from '../icon'
 import { LocaleContext } from '../locale-provider'

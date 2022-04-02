@@ -10,10 +10,7 @@ English | [简体中文](./README.zh-CN.md)
 
 [![](https://img.shields.io/travis/ant-design/ant-design-mobile-rn.svg?style=flat-square)](https://travis-ci.org/ant-design/ant-design-mobile-rn)
 [![Codecov](https://img.shields.io/codecov/c/github/ant-design/ant-design-mobile-rn.svg?style=flat-square)](https://codecov.io/gh/ant-design/ant-design-mobile-rn)
-[![npm package](https://img.shields.io/npm/v/zellosoft/antd-react-native.svg?style=flat-square)](https://www.npmjs.org/package/zellosoft/antd-react-native)
-[![NPM downloads](http://img.shields.io/npm/dm/zellosoft/antd-react-native.svg?style=flat-square)](https://npmjs.org/package/zellosoft/antd-react-native)
-[![Dependency Status](https://david-dm.org/ant-design/ant-design-mobile-rn.svg?style=flat-square)](https://david-dm.org/ant-design/ant-design-mobile-rn)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/ant-design/ant-design-mobile-rn.svg)](http://isitmaintained.com/project/ant-design/ant-design-mobile-rn 'Percentage of issues still open')
+[![npm package](https://img.shields.io/npm/v/@zellosoft/antd-react-native.svg?style=flat-square)](https://www.npmjs.org/package/zellosoft/antd-react-native)
 [![Join the chat at https://gitter.im/ant-design/ant-design](https://img.shields.io/gitter/room/ant-design/ant-design.svg?style=flat-square)](https://gitter.im/ant-design/ant-design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A configurable Mobile UI specification and React-based implementation.
@@ -64,13 +61,13 @@ yarn expo
 ## Install & Usage
 
 ```bash
-$ npm install zellosoft/antd-react-native --save
+$ npm install @zellosoft/antd-react-native --save
 ```
 
 or
 
 ```bash
-yarn add zellosoft/antd-react-native
+yarn add @zellosoft/antd-react-native
 ```
 
 ### Installing peer dependencies

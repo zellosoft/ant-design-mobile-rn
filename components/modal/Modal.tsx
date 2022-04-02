@@ -1,13 +1,14 @@
 import React from 'react'
 import {
   KeyboardAvoidingView,
-  Platform, StyleProp,
+  Platform,
+  StyleProp,
   Text,
   TextStyle,
   TouchableHighlight,
   TouchableWithoutFeedback,
   View,
-  ViewStyle
+  ViewStyle,
 } from 'react-native'
 import { LocaleContext } from '../locale-provider'
 import { WithTheme, WithThemeStyles } from '../style'

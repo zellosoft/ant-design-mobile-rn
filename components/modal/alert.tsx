@@ -6,7 +6,7 @@ import { Action, CallbackOnBackHandler } from './PropsType'
 export default function a(
   title: React.ReactNode,
   content: React.ReactNode,
-  actions: Action[] = [{ text: '确定' }],
+  actions: Action[] = [{ text: 'OK' }],
   onBackHandler?: CallbackOnBackHandler,
 ) {
   const key = Portal.add(

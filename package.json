@@ -1,6 +1,6 @@
 {
   "name": "@zellosoft/antd-react-native",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Antd RN - Cross-platform UI for React Native.",
   "keywords": [
     "ant",
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zellosoft/antd-react-native.git"
+    "url": "git://github.com/zellosoft/antd-react-native.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/zellosoft/antd-react-native/issues"
@@ -120,9 +120,6 @@
     "tslint": "eslint components --fix && npm run compile && rm -rf lib",
     "applint": "eslint rn-kitchen-sink --ext '.js' --fix",
     "pre-publish": "npm run test:all",
-    "prepublish": "antd-tools run guard",
-    "prepare": "antd-tools run guard",
-    "prepublishOnly": "antd-tools run guard",
     "test": "jest --config .jest.config.js",
     "test:all": "./scripts/test-all.sh",
     "compile": "cross-env BABEL_ENV=dist antd-tools run compile",
@@ -132,6 +129,7 @@
     "site": "cross-env NODE_ENV=production cross-env DEMO_ENV=react bisheng build -c ./site/bisheng.desktop.config.js && cp CNAME _site",
     "deploy": "npm run clean && npm run site && bisheng gh-pages --push-only",
     "pub": "cross-env BABEL_ENV=dist antd-tools run pub",
+    "publish": "npm publish",
     "rn-start": "node scripts/start.js",
     "ios": "concurrently \"npm run watch-tsc\" \"npm run _ios\"",
     "android": "concurrently \"npm run watch-tsc\" \"npm run _android\"",

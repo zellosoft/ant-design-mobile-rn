@@ -1,6 +1,6 @@
 {
   "name": "@zellosoft/antd-react-native",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Antd RN - Cross-platform UI for React Native.",
   "keywords": [
     "ant",
@@ -129,7 +129,7 @@
     "site": "cross-env NODE_ENV=production cross-env DEMO_ENV=react bisheng build -c ./site/bisheng.desktop.config.js && cp CNAME _site",
     "deploy": "npm run clean && npm run site && bisheng gh-pages --push-only",
     "pub": "cross-env BABEL_ENV=dist antd-tools run pub",
-    "publish": "npm publish",
+    "publish": "npm run compile && npm publish",
     "rn-start": "node scripts/start.js",
     "ios": "concurrently \"npm run watch-tsc\" \"npm run _ios\"",
     "android": "concurrently \"npm run watch-tsc\" \"npm run _android\"",

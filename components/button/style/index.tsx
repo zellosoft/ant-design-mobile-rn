@@ -21,8 +21,8 @@ export interface ButtonStyles {
   primaryHighlightText: TextStyle
   ghostHighlightText: TextStyle
   warningHighlightText: TextStyle
-  largeRawText: TextStyle
-  smallRawText: TextStyle
+  largeRawText: any
+  smallRawText: any
   defaultRawText: TextStyle
   primaryRawText: TextStyle
   ghostRawText: TextStyle
@@ -113,9 +113,13 @@ export default (theme: Theme) =>
     },
     largeRawText: {
       fontSize: theme.button_font_size,
+      textTransform: theme.button_font_transform as string,
+      fontWeight: theme.button_font_weight as string,
     },
     smallRawText: {
       fontSize: theme.button_font_size_sm,
+      textTransform: theme.button_font_transform as string,
+      fontWeight: theme.button_font_weight as string,
     },
     defaultRawText: {
       color: theme.color_text_base,

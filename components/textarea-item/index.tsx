@@ -153,6 +153,7 @@ export default class TextAreaItem extends React.Component<
               <TextInput
                 clearButtonMode={clear ? 'while-editing' : 'never'}
                 underlineColorAndroid="transparent"
+                placeholderTextColor={theme.color_text_placeholder}
                 style={[
                   s.input,
                   textareaStyle,

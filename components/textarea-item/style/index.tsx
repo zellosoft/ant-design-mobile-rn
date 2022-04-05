@@ -39,5 +39,7 @@ export default (theme: Theme) =>
       right: theme.h_spacing_md,
       bottom: theme.h_spacing_md,
     },
-    countText: {},
+    countText: {
+      color: theme.color_text_placeholder,
+    },
   })

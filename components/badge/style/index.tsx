@@ -37,14 +37,18 @@ export default (theme: Theme) =>
       borderRadius: 2 * grid,
     },
     textDom: {
-      paddingVertical: 0.5 * grid,
-      paddingHorizontal: (Platform.OS === 'ios' ? 1.5 : 2) * grid,
       backgroundColor: theme.brand_important,
       borderRadius: 4 * theme.radius_sm,
       borderStyle: 'solid',
       position: 'absolute',
-      top: -10,
-      right: -15,
+      top: -5,
+      right: -5,
+      fontSize: 8,
+      justifyContent: 'center',
+      alignContent: 'center',
+      // width: 4 * grid,
+      height: 4 * grid,
+      paddingHorizontal: (Platform.OS === 'ios' ? 1.5 : 2) * grid,
     },
     textCorner: {
       width: 18 * grid,
@@ -64,5 +68,6 @@ export default (theme: Theme) =>
     text: {
       color: theme.color_text_base_inverse,
       textAlign: 'center',
+      fontSize: 8,
     },
   })

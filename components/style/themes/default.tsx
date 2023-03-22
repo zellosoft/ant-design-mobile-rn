@@ -104,7 +104,9 @@ export default {
 
   // button
   button_height: 47,
-  button_font_size: 18,
+  button_font_size: 16,
+  button_font_weight: 'bold',
+  button_font_transform: 'uppercase',
 
   button_height_sm: 23,
   button_font_size_sm: 12,

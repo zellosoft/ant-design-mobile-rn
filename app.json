@@ -1,0 +1,12 @@
+{
+  "name": "antd_react-native",
+  "displayName": "antd_react-native",
+  "expo": {
+    "name": "@zellosoft/antd-react-native",
+    "slug": "ant-design-mobile-rn",
+    "description": "Antd RN - Cross-platform UI for React Native",
+    "icon": "./rn-kitchen-sink/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "version": "5.0.1",
+    "entryPoint": "./expo/index.js"
+  }
+}

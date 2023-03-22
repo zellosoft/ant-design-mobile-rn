@@ -1,4 +1,5 @@
 import React from 'react'
+import { LocaleContext } from '../locale-provider'
 import PickerStyles, { PickerStyle } from '../picker/style/index'
 import { WithTheme, WithThemeStyles } from '../style'
 import { getComponentLocale } from '../_util/getLocale'
@@ -6,7 +7,6 @@ import AntDatePicker from './datepicker'
 import PopupDatePicker from './datepicker/Popup'
 import { DatePickerPropsType } from './PropsType'
 import { formatProps } from './utils'
-import { LocaleContext } from '../locale-provider'
 
 export interface DatePickerProps
   extends DatePickerPropsType,
@@ -27,7 +27,7 @@ export default class DatePicker extends React.Component<DatePickerProps> {
       this.props,
       (this as any).context,
       'DatePicker',
-      () => require('./locale/zh_CN'),
+      () => require('./locale/en_US'),
     )
 
     const { okText, dismissText, extra, DatePickerLocale } = locale

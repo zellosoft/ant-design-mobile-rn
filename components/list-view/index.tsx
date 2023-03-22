@@ -4,7 +4,7 @@ import { ActivityIndicator, Platform, Text, View } from 'react-native'
 import Icon from '../icon'
 import { LocaleContext } from '../locale-provider'
 import { getComponentLocale } from '../_util/getLocale'
-import zh_CN from './locale/zh_CN'
+import zh_CN from './locale/en_US'
 
 type UltimateListViewProps = {
   initialNumToRender?: any

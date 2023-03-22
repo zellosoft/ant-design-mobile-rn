@@ -220,6 +220,7 @@ export default class InputItem extends React.Component<
                 editable={!disabled && editable}
                 clearButtonMode={clear ? 'while-editing' : 'never'}
                 underlineColorAndroid="transparent"
+                placeholderTextColor={theme.color_text_placeholder}
                 ref={(el) => (this.inputRef = el)}
                 {...restProps}
                 {...valueProps}
@@ -261,7 +262,7 @@ export default class InputItem extends React.Component<
                   </View>
                 </TouchableWithoutFeedback>
               ) : null}
-              {error && (
+              {error ? (
                 <TouchableWithoutFeedback onPress={onErrorClick}>
                   <View style={[s.errorIcon]}>
                     <Icon
@@ -272,7 +273,7 @@ export default class InputItem extends React.Component<
                     />
                   </View>
                 </TouchableWithoutFeedback>
-              )}
+              ) : null}
             </View>
           )
         }}

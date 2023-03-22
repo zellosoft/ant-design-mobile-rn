@@ -14,7 +14,7 @@ import { LocaleContext } from '../locale-provider'
 import { WithTheme, WithThemeStyles } from '../style'
 import { getComponentLocale } from '../_util/getLocale'
 import alert from './alert'
-import zh_CN from './locale/zh_CN'
+import en_US from './locale/en_US'
 import RCModal from './ModalView'
 import operation from './operation'
 import prompt from './prompt'
@@ -74,7 +74,7 @@ class AntmModal extends React.Component<ModalProps, any> {
       this.props,
       (this as any).context,
       'Modal',
-      () => zh_CN,
+      () => en_US,
     )
 
     return (
